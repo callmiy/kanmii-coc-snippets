@@ -1,0 +1,35 @@
+{
+  "name": "kanmii-coc-snippets",
+  "displayName": "Kanmii COC VIM Snippets",
+  "description": "Code snippets for various languages",
+  "version": "0.0.1",
+  "publisher": "kanmii",
+  "license": "MIT",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kanmii/coc-snippets"
+  },
+  "engines": {
+    "vscode": "^1.11.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/tsx.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/tsx.json"
+      },
+      {
+        "language": "elixir",
+        "path": "./snippets/elixir.json"
+      }
+    ]
+  }
+}
