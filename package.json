@@ -20,11 +20,11 @@
     "snippets": [
       {
         "language": "typescriptreact",
-        "path": "./snippets/tsx.json"
+        "path": "./snippets/typescriptreact.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/tsx.json"
+        "path": "./snippets/typescriptreact.json"
       },
       {
         "language": "elixir",
