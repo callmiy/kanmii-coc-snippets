@@ -211,9 +211,15 @@
     "description": "immediately invoked function expression"
   },
 
-  "console.log JSON.stringifigy": {
+  "console.log JSON.stringify": {
     "prefix": "consolelogjson",
     "body": ["console.log(JSON.stringify(${1:val}, null, 2));"],
-    "description": "console.log JSON.stringifigy"
+    "description": "console.log JSON.stringify"
+  },
+
+  "Typescript {[key:string]:any}": {
+    "prefix": "keystringtype",
+    "body": ["{[key:string]:${1:any}} ${2}"],
+    "description": "Typescript {[key:string]:any}"
   }
 }
