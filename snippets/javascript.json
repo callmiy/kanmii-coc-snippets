@@ -17,8 +17,7 @@
   "Print to console": {
     "prefix": "consolelogapplog",
     "body": [
-      "// tslint:disable-next-line:no-console",
-      "console.log(`\\n\\t\\tLogging start\\n\\n\\n\\n ${1:label}\\n`, ${2:data}, `\\n\\n\\n\\n\\t\\tLogging ends\\n`)"
+      "console.log(new Error().stack, `\\n\\t\\tLogging start\\n\\n\\n\\n ${1:label}\\n`, ${2:data}, `\\n\\n\\n\\n\\t\\tLogging ends\\n`)"
     ],
     "description": "Log to console with some debug info"
   },
@@ -57,7 +56,7 @@
   "test react": {
     "prefix": "testreact",
     "body": [
-      "// tslint:disable: no-any",
+      "/* eslint-disable @typescript-eslint/no-explicit-any */",
       "import React, { ComponentType } from \"react\";",
       "import \"react-testing-library/cleanup-after-each\";",
       "import { render } from \"@testing-library/react\";",
@@ -85,7 +84,7 @@
   "react test": {
     "prefix": "reacttest",
     "body": [
-      "// tslint:disable: no-any",
+      "/* eslint-disable @typescript-eslint/no-explicit-any */",
       "import React, { ComponentType } from \"react\";",
       "import \"react-testing-library/cleanup-after-each\";",
       "import { render } from \"@testing-library/react\";",
@@ -130,7 +129,6 @@
       "(a, b) => {",
       "\t\t\tObject.entries(a).forEach(([k, v]) => {",
       "\t\t\t\t\tif (v !== b[k]) {",
-      "\t\t\t\t\t\t\t// tslint:disable-next-line:no-console",
       "\t\t\t\t\t\t\tconsole.log(",
       "\t\t\t\t\t\t\t\t\t\"\\n\\t\\tLogging start\\n\\n\\n\\n a !== b\\n\",",
       "\t\t\t\t\t\t\t\t\tk,",
