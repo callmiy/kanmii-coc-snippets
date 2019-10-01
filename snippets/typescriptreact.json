@@ -30,7 +30,14 @@
   "Print to console": {
     "prefix": "consolelogapplog",
     "body": [
-      "console.log(new Error().stack, `\\n\\t\\tLogging start\\n\\n\\n\\n ${1:label}\\n`, ${2:data}, `\\n\\n\\n\\n\\t\\tLogging ends\\n`)"
+      "console.log(`\\n\\t\\tLogging start\\n\\n\\n\\n ${2:label}\\n`, ${1:data}, `\\n\\n\\n\\n\\t\\tLogging ends\\n`)"
+    ],
+    "description": "Log to console with some debug info"
+  },
+  "Print to console error": {
+    "prefix": "consolelogapplogerror",
+    "body": [
+      "console.log(new Error().stack, `\\n\\t\\tLogging start\\n\\n\\n\\n ${2:label}\\n`, ${1:data}, `\\n\\n\\n\\n\\t\\tLogging ends\\n`)"
     ],
     "description": "Log to console with some debug info"
   },
