@@ -190,5 +190,18 @@
     "prefix": "consolelogjson",
     "body": ["console.log(JSON.stringify(${1:val}, null, 2));"],
     "description": "console.log JSON.stringify"
+  },
+
+  "eslint-disable-next-line": {
+    "prefix": "eslint-disable-next-line",
+    "body": "/* eslint-disable-next-line ${1} */",
+    "description": "eslint disable next line"
+  },
+
+
+  "eslint-disable": {
+    "prefix": "eslint-disable",
+    "body": "/* eslint-disable ${1} */",
+    "description": "eslint disable"
   }
 }

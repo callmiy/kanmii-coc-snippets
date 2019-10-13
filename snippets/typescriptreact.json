@@ -228,5 +228,17 @@
     "prefix": "keystringtype",
     "body": ["{[key:string]:${1:any}} ${2}"],
     "description": "Typescript {[key:string]:any}"
+  },
+
+  "eslint-disable-next-line": {
+    "prefix": "eslint-disable-next-line",
+    "body": "/* eslint-disable-next-line ${1} */",
+    "description": "eslint disable next line"
+  },
+
+  "eslint-disable": {
+    "prefix": "eslint-disable",
+    "body": "/* eslint-disable ${1} */",
+    "description": "eslint disable"
   }
 }
