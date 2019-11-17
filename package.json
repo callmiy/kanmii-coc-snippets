@@ -37,6 +37,9 @@
       {
         "language": "javascriptreact",
         "path": "./snippets/javascript.json"
+      },{
+        "language": "python",
+        "path": "./snippets/python.json"
       }
     ]
   }
