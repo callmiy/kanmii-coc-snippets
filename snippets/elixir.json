@@ -344,5 +344,10 @@
     "prefix": "@desc",
     "body": ["@desc ~S\"\"\"", "\t${1}", "\"\"\""],
     "description": "@desc"
+  },
+  "helperfunction": {
+    "prefix": "helperfunction",
+    "body": "###################### ${1} ###############################",
+    "description": "helperfunction"
   }
 }
