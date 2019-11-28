@@ -257,5 +257,54 @@
       "`;"
     ],
     "description": "graphql mutation tag"
+  },
+  "graphql mutation tag1": {
+    "prefix": "graphqlmutationtag",
+    "body": [
+      "import gql from \"graphql-tag\";",
+      "",
+      "",
+      "export const ${1:tag_name} = gql`",
+      "\tmutation ${2:mutation_name}($input: ${2:mutation_name}Input!) {",
+      "\t\t\t${3:function_name}(input: $input) {",
+      "",
+      "\t\t\t}",
+      "\t}",
+      "",
+      "`;"
+    ],
+    "description": "graphql mutation tag"
+  },
+  "use graphql mutation typings": {
+    "prefix": "usemutationtypes",
+    "body": [
+      "import {",
+      "\tuseMutation,",
+      "\tMutationFunction,",
+      "\tMutationFunctionOptions,",
+      "\tMutationResult,",
+      "} from \"react-apollo\";",
+      "",
+      "export function use${1:mutation_name}Mutation(): Use${1:mutation_name}Mutation {",
+      "\treturn useMutation(${2:MUTATION_GQL_TAG_NAME});",
+      "}",
+      "",
+      "export type ${1:mutation_name}MutationFn = MutationFunction<",
+      "\t${1:mutation_name},",
+      "\t${1:mutation_name}Variables",
+      ">;",
+      "",
+      "// used to type check test mock calls",
+      "export type ${1:mutation_name}MutationFnOptions = MutationFunctionOptions<",
+      "\t${1:mutation_name},",
+      "\t${1:mutation_name}Variables",
+      ">;",
+      "",
+      "export type Use${1:mutation_name}Mutation = [",
+      "\t${1:mutation_name}MutationFn,",
+      "\tMutationResult<${1:mutation_name}>,",
+      "];"
+    ],
+    "description": "use graphql mutation typings"
   }
 }
