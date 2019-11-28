@@ -275,8 +275,8 @@
     ],
     "description": "graphql mutation tag"
   },
-  "use graphql mutation typings": {
-    "prefix": "usemutationtypes",
+  "use mutation function typings": {
+    "prefix": "usemutationfunctiontypings",
     "body": [
       "import {",
       "\tuseMutation,",
@@ -284,6 +284,10 @@
       "\tMutationFunctionOptions,",
       "\tMutationResult,",
       "} from \"react-apollo\";",
+      "import {",
+      "\t${1:mutation_name},",
+      "\t${1:mutation_name}Variables,",
+      "} from \"../apollo-types/${1:mutation_name}\";",
       "",
       "export function use${1:mutation_name}Mutation(): Use${1:mutation_name}Mutation {",
       "\treturn useMutation(${2:MUTATION_GQL_TAG_NAME});",
@@ -305,6 +309,6 @@
       "\tMutationResult<${1:mutation_name}>,",
       "];"
     ],
-    "description": "use graphql mutation typings"
+    "description": "use mutation function typings"
   }
 }
