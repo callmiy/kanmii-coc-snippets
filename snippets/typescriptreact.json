@@ -240,5 +240,22 @@
     "prefix": "eslint-disable",
     "body": "/* eslint-disable ${1} */",
     "description": "eslint disable"
+  },
+  "graphql mutation tag": {
+    "prefix": "mutationtag",
+    "body": [
+      "import gql from \"graphql-tag\";",
+      "",
+      "",
+      "export const ${1:tag_name} = gql`",
+      "\tmutation ${2:mutation_name}($input: ${2:mutation_name}Input!) {",
+      "\t\t\t${3:function_name}(input: $input) {",
+      "",
+      "\t\t\t}",
+      "\t}",
+      "",
+      "`;"
+    ],
+    "description": "graphql mutation tag"
   }
 }
