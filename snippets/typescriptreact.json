@@ -265,8 +265,8 @@
       "",
       "",
       "export const ${1:tag_name} = gql`",
-      "\tmutation ${2:mutation_name}(\\$input: ${2:mutation_name}Input!) {",
-      "\t\t\t${3:function_name}(input: \\$input) {",
+      "\tmutation ${2:mutation_name}(\\\\$input: ${2:mutation_name}Input!) {",
+      "\t\t\t${3:function_name}(input: \\\\$input) {",
       "",
       "\t\t\t}",
       "\t}",
@@ -304,10 +304,10 @@
       "\t${1:mutation_name}Variables",
       ">;",
       "",
-      "export type Use${1:mutation_name}Mutation = [",
-      "\t${1:mutation_name}MutationFn,",
-      "\tMutationResult<${1:mutation_name}>,",
-      "];"
+      "// component's props should extend this",
+      "export interface ${1:mutation_name}Props {",
+      "\t${2:mutation_function_name}: ${1:mutation_name}MutationFn:",
+      "};"
     ],
     "description": "use mutation function typings"
   }
