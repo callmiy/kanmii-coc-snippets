@@ -304,9 +304,14 @@
       "\t${1:mutation_name}Variables",
       ">;",
       "",
+      "export type Use${1:mutation_name}Mutation = [",
+      "\t${1:mutation_name}MutationFn,",
+      "\tMutationResult<${1:mutation_name}>,",
+      "];",
+      "",
       "// component's props should extend this",
       "export interface ${1:mutation_name}Props {",
-      "\t${2:mutation_function_name}: ${1:mutation_name}MutationFn:",
+      "\t${3:mutation_function_name}: ${1:mutation_name}MutationFn;",
       "};"
     ],
     "description": "use mutation function typings"
