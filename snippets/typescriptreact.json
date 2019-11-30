@@ -315,5 +315,34 @@
       "};"
     ],
     "description": "use mutation function typings"
+  },
+  "reducer function wrapped": {
+    "prefix": "reducerfunctionwrapped",
+    "body": [
+      "import { Reducer } from \"react\";",
+      "import { wrapReducer } from \"../../logger\";",
+      "import immer from \"immer\";",
+      "",
+      "export const reducer: Reducer<StateMachine, Action> = (state, action) =>",
+      "\twrapReducer(",
+      "\t\t\tstate,",
+      "\t\t\taction,",
+      "\t\t\t(prevState, { type, ...payload }) => {",
+      "\t\t\t\t\treturn immer(prevState, proxy => {",
+      "\t\t\t\t\t\t\tswitch (type) {",
+      "\t\t\t\t\t\t\t\t\tcase ActionType.CLOSE:",
+      "\t\t\t\t\t\t\t\t\t\t\t{",
+      "\t\t\t\t\t\t\t\t\t\t\t\t\tproxy.value = \"closed\";",
+      "\t\t\t\t\t\t\t\t\t\t\t}",
+      "",
+      "\t\t\t\t\t\t\t\t\t\t\tbreak;",
+      "\t\t\t\t\t\t\t}",
+      "\t\t\t\t\t});",
+      "\t\t\t},",
+      "\t\t\t//  true,",
+      "\t);",
+      ""
+    ],
+    "description": "reducer function wrapped"
   }
 }
