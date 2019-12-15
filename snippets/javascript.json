@@ -245,7 +245,17 @@
   },
   "jsdoc import type": {
     "prefix": "jsdocimporttype",
-    "body": "/** @typedef { import('./appeals-types').${1} } ${1} */",
+    "body": "/** @typedef { import('./').${1} } ${1} */",
     "description": "jsdoc import type"
+  },
+  "jsdoc function annotation": {
+    "prefix": "jsdocfunction",
+    "body": [
+      "/**",
+      "\t* @param {string}  p1 - A string param",
+      "\t* @return {${1:returnType}}",
+      "\t*/"
+    ],
+    "description": "jsdoc function annotation"
   }
 }
