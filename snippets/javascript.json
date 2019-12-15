@@ -242,5 +242,10 @@
     "prefix": "typevariablejsdoc",
     "body": "/** @type {${1}} */",
     "description": "jsdoc @type comment"
+  },
+  "jsdoc import type": {
+    "prefix": "jsdocimporttype",
+    "body": "/** @typedef { import('./appeals-types').${1} } ${1} */",
+    "description": "jsdoc import type"
   }
 }
