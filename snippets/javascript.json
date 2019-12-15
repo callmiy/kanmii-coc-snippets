@@ -237,5 +237,10 @@
       "`;"
     ],
     "description": "graphql mutation tag"
+  },
+  "jsdoc @type comment": {
+    "prefix": "typevariablejsdoc",
+    "body": "/** @type {${1}} */",
+    "description": "jsdoc @type comment"
   }
 }
