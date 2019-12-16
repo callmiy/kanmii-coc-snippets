@@ -2,7 +2,7 @@
   "name": "kanmii-coc-snippets",
   "displayName": "Kanmii COC VIM Snippets",
   "description": "Code snippets for various languages",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "publisher": "kanmii",
   "license": "MIT",
   "scripts": {},
@@ -37,9 +37,14 @@
       {
         "language": "javascriptreact",
         "path": "./snippets/javascript.json"
-      },{
+      },
+      {
         "language": "python",
         "path": "./snippets/python.json"
+      },
+      {
+        "language": "svelte",
+        "path": "./snippets/svelte.json"
       }
     ]
   }
