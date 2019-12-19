@@ -285,5 +285,39 @@
       "\t*/"
     ],
     "description": "jsdoc function annotation"
+  },
+  "svelte test": {
+    "prefix": "sveltetest",
+    "body": [
+      "/* eslint-disable @typescript-eslint/no-explicit-any */",
+      "import { render, wait } from \"@testing-library/svelte\";",
+      "import ${1} from \"../${1}.svelte\";",
+      "",
+      "it(\"renders layout\", async () => {",
+      "\trender(${1}, {",
+      "\t\t\tsegment: \"\"",
+      "\t});",
+      "",
+      "\tawait wait(() => true);",
+      "});"
+    ],
+    "description": "svelte test"
+  },
+  "test svelte": {
+    "prefix": "testsvelte",
+    "body": [
+      "/* eslint-disable @typescript-eslint/no-explicit-any */",
+      "import { render, wait } from \"@testing-library/svelte\";",
+      "import ${1} from \"../${1}.svelte\";",
+      "",
+      "it(\"renders layout\", async () => {",
+      "\trender(${1}, {",
+      "\t\t\tsegment: \"\"",
+      "\t});",
+      "",
+      "\tawait wait(() => true);",
+      "});"
+    ],
+    "description": "test svelte"
   }
 }
