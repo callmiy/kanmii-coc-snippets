@@ -278,6 +278,17 @@
   "use mutation function typings": {
     "prefix": "usemutationfunctiontypings",
     "body": [
+      "/*",
+      "import {",
+      "\tuseMutation,",
+      "} from \"react-apollo\";",
+      "",
+      "import {",
+      "\tMutationFunction,",
+      "\tMutationFunctionOptions,",
+      "\tMutationResult,",
+      "} from \"@apollo/react-common\";",
+      "*/",
       "import {",
       "\tuseMutation,",
       "\tMutationFunction,",
