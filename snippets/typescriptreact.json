@@ -389,5 +389,24 @@
       "});"
     ],
     "description": "test svelte"
+  },
+  "reducer effect definition": {
+    "prefix": "reducereffectdefinition",
+    "body": [
+      "interface ${1:component_name}EffectDefinition<",
+      "\tKey extends string,",
+      "\tEffectArgKeys extends keyof ${2:functions_map_type},",
+      "\tOwnArgs = {}",
+      "> {",
+      "\tkey: Key;",
+      "\teffectArgKeys: EffectArgKeys[];",
+      "\townArgs: OwnArgs;",
+      "\tfunc: (",
+      "\t\t\teffectArgs: { [k in EffectArgKeys]: ${2:functions_map_type}[k] },",
+      "\t\t\townArgs: OwnArgs,",
+      "\t) => void | Promise<void>;",
+      "}"
+    ],
+    "description": "reducer effect definition"
   }
 }
