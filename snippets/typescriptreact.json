@@ -232,13 +232,13 @@
 
   "eslint-disable-next-line": {
     "prefix": "eslint-disable-next-line",
-    "body": "/* eslint-disable-next-line ${1} */",
+    "body": "/* eslint-disable-next-line ${1}*/",
     "description": "eslint disable next line"
   },
 
   "eslint-disable": {
     "prefix": "eslint-disable",
-    "body": "/* eslint-disable ${1} */",
+    "body": "/* eslint-disable ${1}*/",
     "description": "eslint disable"
   },
   "graphql mutation tag": {
