@@ -693,7 +693,7 @@
       "};",
       "",
       "type ${2:TypeName}Effect = EffectDefinition<",
-      "\t\"firstEffect\",",
+      "\t\"${1:function_name}\",",
       "\t\"arg1\"",
       ">;"
     ],
