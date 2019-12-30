@@ -478,6 +478,14 @@
   "state update effect definition": {
     "prefix": "stateupdateeffectdefinition",
     "body": [
+      "{",
+      "type: ActionType.PUT_EFFECT_FUNCTIONS_ARGS;",
+      "} & EffectFunctionsArgs",
+      "\n",
+      "PUT_EFFECT_FUNCTIONS_ARGS = \"@${2:component_path}/put-effects-functions-args\"",
+      "\n",
+      "const effectFunctions = {}",
+      "",
       "readonly effects: (EffectState | { value: EffectValueNoEffect }) & {",
       "\tcontext: EffectContext;",
       "};",
