@@ -207,9 +207,15 @@
   },
 
   "istanbul ignore next": {
-    "prefix": "istanbulignore",
+    "prefix": "istanbulignorenext",
     "body": ["// istanbul ignore next:"],
     "description": "istanbul ignore next"
+  },
+
+  "istanbul ignore file": {
+    "prefix": "istanbulignorefile",
+    "body": "/* istanbul ignore file */",
+    "description": "istanbul ignore next file"
   },
 
   "immediately invoked function expression": {
