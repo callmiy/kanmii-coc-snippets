@@ -2,7 +2,7 @@
   "name": "kanmii-coc-snippets",
   "displayName": "Kanmii COC VIM Snippets",
   "description": "Code snippets for various languages",
-  "version": "0.0.35",
+  "version": "0.0.36",
   "publisher": "kanmii",
   "license": "MIT",
   "scripts": {},
