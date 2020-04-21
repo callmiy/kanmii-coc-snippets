@@ -49,7 +49,7 @@
   },
   "inspect with label in pipe": {
     "prefix": "inspectpipe",
-    "body": ["IO.inspect(label: \"\n-----------${1:label}------------\n\")"],
+    "body": "|> IO.inspect(label: \"\n-----------${1:label}------------\n\")",
     "description": "print to console puts inspect"
   },
   "@opaque type": {
