@@ -44,5 +44,12 @@
     "prefix": "typeignore",
     "body": "  # type: ignore${1} # noqa F821",
     "description": "type ignore"
+  },
+  "sys.exc_info": {
+    "prefix": "sysex",
+    "body": [
+      "import sys;print('\\n\\n',  *sys.exc_info(), sep='\\n\\n');print('\\n\\n')"
+    ],
+    "description": "sys.exc_info"
   }
 }
