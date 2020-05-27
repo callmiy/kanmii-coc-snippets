@@ -88,6 +88,7 @@
     "prefix": "testreact",
     "body": [
       "/* eslint-disable @typescript-eslint/no-explicit-any */",
+      "/* eslint-disable @typescript-eslint/no-unused-vars*/",
       "import React, { ComponentType } from \"react\";",
       "import { render, cleanup } from \"@testing-library/react\";",
       "import { ${1:Component} } from \"../components/${1:Component}/\";",
@@ -119,6 +120,7 @@
     "prefix": "reacttest",
     "body": [
       "/* eslint-disable @typescript-eslint/no-explicit-any */",
+      "/* eslint-disable @typescript-eslint/no-unused-vars*/",
       "import React, { ComponentType } from \"react\";",
       "import { render, cleanup } from \"@testing-library/react\";",
       "import { ${1:Component} } from \"../components/${1:Component}/\";",
