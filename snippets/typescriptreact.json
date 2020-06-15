@@ -775,10 +775,10 @@
   "nonEmptyArray": {
     "prefix": "nonEmptyArray",
     "body": [
-      "type NonEmptyArray<T> = [T, ...T[]];",
+      "export type NonEmptyArray<T> = [T, ...T[]];",
       "",
       "// a user-defined type guard",
-      "function isNonEmptyArray<T>(arr: T[]): arr is NonEmptyArray<T> {",
+      "export function isNonEmptyArray<T>(arr: T[]): arr is NonEmptyArray<T> {",
       "\t\t\treturn arr.length > 0;",
       "}"
     ],
