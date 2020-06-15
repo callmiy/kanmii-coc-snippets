@@ -771,5 +771,17 @@
       "}, [runRunOnceExample]);"
     ],
     "description": "effect useEffect definition"
+  },
+  "nonEmptyArray": {
+    "prefix": "nonEmptyArray",
+    "body": [
+      "type NonEmptyArray<T> = [T, ...T[]];",
+      "",
+      "// a user-defined type guard",
+      "function isNonEmptyArray<T>(arr: T[]): arr is NonEmptyArray<T> {",
+      "\t\t\treturn arr.length > 0;",
+      "}"
+    ],
+    "description": "nonEmptyArray"
   }
 }
