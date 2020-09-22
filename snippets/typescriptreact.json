@@ -212,6 +212,12 @@
     "description": "istanbul ignore next"
   },
 
+  "istanbul ignore else": {
+    "prefix": "istanbulignoreelse",
+    "body": ["// istanbul ignore else:"],
+    "description": "istanbul ignore else"
+  },
+
   "istanbul ignore file": {
     "prefix": "istanbulignorefile",
     "body": "/* istanbul ignore file */",
@@ -226,7 +232,9 @@
 
   "console.log JSON.stringify": {
     "prefix": "consolelogjson",
-    "body": ["console.log(JSON.stringify(${1:val}, null, 2));"],
+    "body": [
+      "console.log(`\\n\\t\\tLogging start\\n\\n\\n\\n ${2:label}\\n`, JSON.stringify(${1:data}, null, 2), `\\n\\n\\n\\n\\t\\tLogging ends\\n`)"
+    ],
     "description": "console.log JSON.stringify"
   },
 
