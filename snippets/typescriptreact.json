@@ -793,7 +793,7 @@
     "description": "nonEmptyArray"
   },
   "actReactTest": {
-    "prefix": "",
+    "prefix": "actReactTest",
     "body": ["act(() => {", "\t${1}", "});"],
     "act react test": ""
   }

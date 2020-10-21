@@ -321,7 +321,7 @@
     "description": "test svelte"
   },
   "actReactTest": {
-    "prefix": "",
+    "prefix": "actReactTest",
     "body": ["act(() => {", "\t${1}", "});"],
     "act react test": ""
   }
