@@ -323,6 +323,6 @@
   "actReactTest": {
     "prefix": "actReactTest",
     "body": ["act(() => {", "\t${1}", "});"],
-    "act react test": ""
+    "description": "actReactTest"
   }
 }
