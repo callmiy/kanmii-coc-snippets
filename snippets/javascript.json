@@ -319,5 +319,10 @@
       "});"
     ],
     "description": "test svelte"
+  },
+  "actReactTest": {
+    "prefix": "",
+    "body": ["act(() => {", "\t${1}", "});"],
+    "act react test": ""
   }
 }
