@@ -796,5 +796,16 @@
     "prefix": "actReactTest",
     "body": ["act(() => {", "\t${1}", "});"],
     "description": "actReactTest"
+  },
+  "describeTest": {
+    "prefix": "describeTest",
+    "body": [
+      "describe(\"${1:describe_label}\", () => {",
+      "\ttest(\"${2:test_label}\", () => {",
+      "",
+      "\t})",
+      "})"
+    ],
+    "description": "describe test jest"
   }
 }
