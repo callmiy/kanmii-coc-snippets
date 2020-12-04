@@ -30,7 +30,7 @@
   "Print to console": {
     "prefix": "consolelogapplog",
     "body": [
-      "console.log(`\\n\\t\\tLogging start\\n\\n\\n\\n ${2:label}\\n`, ${1:data}, `\\n\\n\\n\\n\\t\\tLogging ends\\n`)"
+      "console.log(`\\n\\t\\tLogging start\\n\\n\\n\\n ${2:label}\\n`, ${1:d}, `\\n\\n\\n\\n\\t\\tLogging ends\\n`)"
     ],
     "description": "Log to console with some debug info"
   },
@@ -104,7 +104,7 @@
       "\trender(ui);",
       "});",
       "",
-      "////////////////////////// HELPER FUNCTIONS ///////////////////////////",
+      "// HELPER FUNCTIONS /////////////////////////////////////////////////////",
       "",
       "const ${1:Component}P = ${1:Component} as ComponentType<Partial<{}>>;",
       "",
@@ -136,7 +136,7 @@
       "\trender(ui);",
       "});",
       "",
-      "////////////////////////// HELPER FUNCTIONS ///////////////////////////",
+      "// HELPER FUNCTIONS /////////////////////////////////////////////////////",
       "",
       "const ${1:Component}P = ${1:Component} as ComponentType<Partial<{}>>;",
       "",
@@ -151,7 +151,7 @@
   "helper funcs": {
     "prefix": "helperfuncs",
     "body": [
-      "////////////////////////// ${1} ////////////////////////////",
+      "// ${1} ///////////////////////////////////////////////////////////////////////",
       "",
       "",
       "${2}"
@@ -233,7 +233,7 @@
   "console.log JSON.stringify": {
     "prefix": "consolelogjson",
     "body": [
-      "console.log(`\\n\\t\\tLogging start\\n\\n\\n\\n ${2:label}\\n`, JSON.stringify(${1:data}, null, 2), `\\n\\n\\n\\n\\t\\tLogging ends\\n`)"
+      "console.log(`\\n\\t\\tLogging start\\n\\n\\n\\n ${2:label}\\n`, JSON.stringify(${1:d}, null, 2), `\\n\\n\\n\\n\\t\\tLogging ends\\n`)"
     ],
     "description": "console.log JSON.stringify"
   },
@@ -378,7 +378,7 @@
     "prefix": "sveltetest",
     "body": [
       "/* eslint-disable @typescript-eslint/no-explicit-any */",
-      "import { render, wait } from \"@testing-library/svelte\";",
+      "import { render, waitFor } from \"@testing-library/svelte\";",
       "import ${1} from \"../${1}.svelte\";",
       "",
       "it(\"renders layout\", async () => {",
@@ -386,7 +386,7 @@
       "\t\t\tsegment: \"\"",
       "\t});",
       "",
-      "\tawait wait(() => true);",
+      "\tawait waitFor(() => true);",
       "});"
     ],
     "description": "svelte test"
@@ -395,7 +395,7 @@
     "prefix": "testsvelte",
     "body": [
       "/* eslint-disable @typescript-eslint/no-explicit-any */",
-      "import { render, wait } from \"@testing-library/svelte\";",
+      "import { render, waitFor } from \"@testing-library/svelte\";",
       "import ${1} from \"../${1}.svelte\";",
       "",
       "it(\"renders layout\", async () => {",
@@ -403,7 +403,7 @@
       "\t\t\tsegment: \"\"",
       "\t});",
       "",
-      "\tawait wait(() => true);",
+      "\tawait waitFor(() => true);",
       "});"
     ],
     "description": "test svelte"

@@ -17,7 +17,7 @@
   "Print to console": {
     "prefix": "consolelogapplog",
     "body": [
-      "console.log(`\\n\\t\\tLogging start\\n\\n\\n\\n ${1:label}\\n`, ${2:data}, `\\n\\n\\n\\n\\t\\tLogging ends\\n`)"
+      "console.log(`\\n\\t\\tLogging start\\n\\n\\n\\n ${2:label}\\n`, ${1:d}, `\\n\\n\\n\\n\\t\\tLogging ends\\n`)"
     ],
     "description": "Log to console with some debug info"
   },
@@ -131,7 +131,7 @@
   "helper funcs": {
     "prefix": "helperfuncs",
     "body": [
-      "////////////////////////// ${1} ////////////////////////////",
+      "// ${1} ///////////////////////////////////////////////////////////////////////",
       "",
       "",
       "${2}"
