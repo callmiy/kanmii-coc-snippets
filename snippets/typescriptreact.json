@@ -807,5 +807,10 @@
       "})"
     ],
     "description": "describe test jest"
+  },
+  "@jest-environment jest-environment-jsdom-sixteen": {
+    "prefix": "jsdomenvsixteen",
+    "body": ["/**", "* @jest-environment jest-environment-jsdom-sixteen", "*/"],
+    "description": "@jest-environment jest-environment-jsdom-sixteen"
   }
 }
