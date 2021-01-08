@@ -128,16 +128,6 @@
     ],
     "description": "test react"
   },
-  "helper funcs": {
-    "prefix": "helperfuncs",
-    "body": [
-      "// ${1} ///////////////////////////////////////////////////////////////////////",
-      "",
-      "",
-      "${2}"
-    ],
-    "description": "Helper functions header"
-  },
 
   "dom ready": {
     "prefix": "domready",
@@ -342,5 +332,18 @@
     "prefix": "jsdomenvsixteen",
     "body": ["/**", "* @jest-environment jest-environment-jsdom-sixteen", "*/"],
     "description": "@jest-environment jest-environment-jsdom-sixteen"
+  },
+
+  "helper funcs": {
+    "prefix": "helperfuncs",
+    "body": [
+      "// ====================================================",
+      "// ${1}",
+      "// ====================================================",
+      "",
+      "",
+      "${2}"
+    ],
+    "description": "Helper functions header"
   }
 }
