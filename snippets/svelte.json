@@ -71,16 +71,6 @@
       "export default ${1:name}"
     ]
   },
-  "helper funcs": {
-    "prefix": "helperfuncs",
-    "body": [
-      "////////////////////////// ${1} ////////////////////////////",
-      "",
-      "",
-      "${2}"
-    ],
-    "description": "Helper functions header"
-  },
 
   "istanbul ignore next": {
     "prefix": "istanbulignore",
@@ -116,5 +106,17 @@
     "prefix": "eslint-disable",
     "body": "/* eslint-disable ${1} */",
     "description": "eslint disable"
+  },
+  "helper funcs": {
+    "prefix": "helperfuncs",
+    "body": [
+      "// ====================================================",
+      "// ${1}",
+      "// ====================================================",
+      "",
+      "",
+      "${2}"
+    ],
+    "description": "Helper functions header"
   }
 }
