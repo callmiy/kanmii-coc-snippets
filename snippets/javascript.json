@@ -17,17 +17,47 @@
   "Print to console": {
     "prefix": "consolelogapplog",
     "body": [
-      "console.log(`\\n\\t\\tLogging start\\n\\n\\n\\n ${2:label}\\n`, ${1:d}, `\\n\\n\\n\\n\\t\\tLogging ends\\n`)"
+      "console.log(",
+      "\t`\\n======================Logging start==================\\n",
+      "\t\t\tLabel: ${1:label}",
+      "\t`,",
+      "\t${2:code},",
+      "\t`\\n\\n=====================Logging ends===================\\n`",
+      ");"
     ],
     "description": "Log to console with some debug info"
   },
+
   "Print to console error": {
     "prefix": "consolelogapplogerror",
     "body": [
-      "console.log(new Error().stack, `\\n\\t\\tLogging start\\n\\n\\n\\n ${2:label}\\n`, ${1:data}, `\\n\\n\\n\\n\\t\\tLogging ends\\n`)"
+      "console.log(",
+      "\t`\\n======================Logging start==================\\n",
+      "\t\t\tLabel: ${1:label}",
+      "\t`,",
+      "\tnew Error().stack,",
+      "\t`\\n\\n`,",
+      "\t${2:code},",
+      "\t`\\n\\n=====================Logging ends===================\\n`",
+      ");"
     ],
     "description": "Log to console with some debug info"
   },
+
+  "console.log JSON.stringify": {
+    "prefix": "consolelogjson",
+    "body": [
+      "console.log(",
+      "\t`\\n======================Logging start==================\\n",
+      "\t\t\tLabel: ${1:result}",
+      "\t`,",
+      "\tJSON.stringify(${1:code}, null, 2),",
+      "\t`\\n\\n=====================Logging ends===================\\n`",
+      ");"
+    ],
+    "description": "console.log JSON.stringify"
+  },
+
   "const function": {
     "prefix": "constantfunc",
     "body": [
@@ -37,6 +67,7 @@
       "}"
     ]
   },
+
   "export const function": {
     "prefix": "exportconstantfunc",
     "body": [
@@ -46,6 +77,7 @@
       "}"
     ]
   },
+
   "export default const function": {
     "prefix": "exportdefaultconstantfunc",
     "body": [
@@ -58,10 +90,12 @@
       "export default ${1:funcName}"
     ]
   },
+
   "export constant": {
     "prefix": "exportconstant",
     "body": "export const ${1:name} = $0"
   },
+
   "export default constant": {
     "prefix": "exportdefaultconstant",
     "body": [
@@ -71,6 +105,7 @@
       "export default ${1:name}"
     ]
   },
+
   "test react": {
     "prefix": "testreact",
     "body": [
@@ -99,6 +134,7 @@
     ],
     "description": "test react"
   },
+
   "react test": {
     "prefix": "reacttest",
     "body": [
@@ -205,14 +241,6 @@
     "description": "immediately invoked function expression"
   },
 
-  "console.log JSON.stringify": {
-    "prefix": "consolelogjson",
-    "body": [
-      "console.log(`\\n\\t\\tLogging start\\n\\n\\n\\n ${2:label}\\n`, JSON.stringify(${1:data}, null, 2), `\\n\\n\\n\\n\\t\\tLogging ends\\n`)"
-    ],
-    "description": "console.log JSON.stringify"
-  },
-
   "eslint-disable-next-line": {
     "prefix": "eslint-disable-next-line",
     "body": "/* eslint-disable-next-line ${1} */",
@@ -224,6 +252,7 @@
     "body": "/* eslint-disable ${1} */",
     "description": "eslint disable"
   },
+
   "graphql mutation tag": {
     "prefix": "mutationtag",
     "body": [
@@ -241,6 +270,7 @@
     ],
     "description": "graphql mutation tag"
   },
+
   "graphql mutation tag1": {
     "prefix": "graphqlmutationtag",
     "body": [
@@ -258,16 +288,19 @@
     ],
     "description": "graphql mutation tag"
   },
+
   "jsdoc @type comment": {
     "prefix": "typevariablejsdoc",
     "body": "/** @type {${1}} */",
     "description": "jsdoc @type comment"
   },
+
   "jsdoc import type": {
     "prefix": "jsdocimporttype",
     "body": "/** @typedef { import('./').${1} } ${1} */",
     "description": "jsdoc import type"
   },
+
   "jsdoc function annotation": {
     "prefix": "jsdocfunction",
     "body": [
@@ -278,6 +311,7 @@
     ],
     "description": "jsdoc function annotation"
   },
+
   "svelte test": {
     "prefix": "sveltetest",
     "body": [
@@ -295,6 +329,7 @@
     ],
     "description": "svelte test"
   },
+
   "test svelte": {
     "prefix": "testsvelte",
     "body": [
@@ -312,11 +347,13 @@
     ],
     "description": "test svelte"
   },
+
   "actReactTest": {
     "prefix": "actReactTest",
     "body": ["act(() => {", "\t${1}", "});"],
     "description": "actReactTest"
   },
+
   "describeTest": {
     "prefix": "describeTest",
     "body": [
@@ -328,6 +365,7 @@
     ],
     "description": "describe test jest"
   },
+
   "@jest-environment jest-environment-jsdom-sixteen": {
     "prefix": "jsdomenvsixteen",
     "body": ["/**", "* @jest-environment jest-environment-jsdom-sixteen", "*/"],

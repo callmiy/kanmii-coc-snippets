@@ -4,6 +4,7 @@
     "body": ["fn(${1:param}) -> ${2:expr} end"],
     "description": "Anonymous function"
   },
+
   "with <- do": {
     "prefix": "withok",
     "body": [
@@ -13,16 +14,19 @@
     ],
     "description": "with ok do"
   },
+
   "if clause": {
     "prefix": "if",
     "body": ["if ${1:expr} do", "\t${2:expr}", "end"],
     "description": "if clause"
   },
+
   "if else clause": {
     "prefix": "ifelse",
     "body": ["if ${1:expr} do", "\t${2:expr}", "else", "\t${3:expr}", "end"],
     "description": "if else clause"
   },
+
   "print to console": {
     "prefix": "puts",
     "body": [
@@ -32,6 +36,7 @@
     ],
     "description": "print to console - puts"
   },
+
   "inspect console": {
     "prefix": "putsinspect",
     "body": [
@@ -40,6 +45,7 @@
     ],
     "description": "print to console puts inspect"
   },
+
   "inspect with label": {
     "prefix": "inspectlabel",
     "body": [
@@ -47,26 +53,31 @@
     ],
     "description": "print to console puts inspect"
   },
+
   "inspect with label in pipe": {
     "prefix": "inspectpipe",
     "body": "|> IO.inspect(label: \"\n-----------${1:label}------------\n\")",
     "description": "print to console puts inspect"
   },
+
   "@opaque type": {
     "prefix": "@opaque",
     "body": "@opaque ${1:t} :: ${2:expr}",
     "description": "@opaque type"
   },
+
   "@type type": {
     "prefix": "@type",
     "body": "@type ${1:t} :: ${2:type}",
     "description": "@type type"
   },
+
   "@spec": {
     "prefix": "@spec",
     "body": "@spec ${1:fun_name}(${2:param} :: ${3:type}) :: ${4:return}",
     "description": "function specification"
   },
+
   "for expression": {
     "prefix": "for expr",
     "body": [
@@ -79,6 +90,7 @@
     ],
     "description": "for expression"
   },
+
   "for expression no end": {
     "prefix": "for no end expr",
     "body": [
@@ -90,6 +102,7 @@
     ],
     "description": "for expression no end"
   },
+
   "set up test module": {
     "prefix": "defmoduletest",
     "body": [
@@ -103,11 +116,13 @@
     ],
     "description": "set up test module"
   },
+
   "@behaviour": {
     "prefix": "@behaviour",
     "body": "@behaviour ",
     "description": "@behaviour"
   },
+
   "Registry": {
     "prefix": "registry",
     "body": [
@@ -118,26 +133,31 @@
     ],
     "description": "Elixir Registry"
   },
+
   "@moduledoc": {
     "prefix": "@moduledoc",
     "body": ["@moduledoc ~S\"\"\"", "\t$1", "\"\"\""],
     "description": "@moduledoc"
   },
+
   "@moduledoc false": {
     "prefix": "@moduledoc_false",
     "body": "@moduledoc false",
     "description": "@moduledoc false"
   },
+
   "@doc": {
     "prefix": "@doc",
     "body": ["@doc ~S\"\"\"", "\t$1", "\"\"\""],
     "description": "@doc"
   },
+
   "@doc false": {
     "prefix": "@doc_false",
     "body": "@doc false",
     "description": "@doc false"
   },
+
   "Supervisor spec": {
     "prefix": "supervisor_spec",
     "body": [
@@ -157,6 +177,7 @@
     ],
     "description": "Supervisor specification"
   },
+
   "DynamicSupervisor spec": {
     "prefix": "supervisor_spec_dynamic",
     "body": [
@@ -170,6 +191,7 @@
     ],
     "description": "DynamicSupervisor specification"
   },
+
   "Supervised worker spec": {
     "prefix": "supervisor_spec_worker",
     "body": [
@@ -183,6 +205,7 @@
     ],
     "description": "DynamicSupervisor specification"
   },
+
   "Create ecto table": {
     "prefix": "create_table_ecto",
     "body": [
@@ -205,6 +228,7 @@
     ],
     "description": "Create ecto table"
   },
+
   "Create ecto schema": {
     "prefix": "create_schema_ecto",
     "body": [
@@ -232,6 +256,7 @@
     ],
     "description": "Create ecto schema"
   },
+
   "Ecto aliases": {
     "prefix": "ecto_aliases",
     "body": [
@@ -245,6 +270,7 @@
     ],
     "description": "Ecto aliases"
   },
+
   "elixirc_paths": {
     "prefix": "elixirc_paths",
     "body": [
@@ -255,6 +281,7 @@
     ],
     "description": "elixirc_paths"
   },
+
   "absinthe child schema": {
     "prefix": "absinthe_child_schema_definition",
     "body": [
@@ -345,6 +372,7 @@
     "body": ["@desc ~S\"\"\"", "\t${1}", "\"\"\""],
     "description": "@desc"
   },
+
   "helperfunction": {
     "prefix": "helperfunction",
     "body": [
@@ -360,6 +388,7 @@
     ],
     "description": "helperfunction"
   },
+
   "GenServer snippet": {
     "prefix": "genserver_snippet",
     "body": [

@@ -17,17 +17,47 @@
   "Print to console": {
     "prefix": "consolelogapplog",
     "body": [
-      "console.log(`\\n\\t\\tLogging start\\n\\n\\n\\n ${2:label}\\n`, ${1:data}, `\\n\\n\\n\\n\\t\\tLogging ends\\n`)"
+      "console.log(",
+      "\t`\\n======================Logging start==================\\n",
+      "\t\t\tLabel: ${1:label}",
+      "\t`,",
+      "\t${2:code},",
+      "\t`\\n\\n=====================Logging ends===================\\n`",
+      ");"
     ],
     "description": "Log to console with some debug info"
   },
+
   "Print to console error": {
     "prefix": "consolelogapplogerror",
     "body": [
-      "console.log(new Error().stack, `\\n\\t\\tLogging start\\n\\n\\n\\n ${2:label}\\n`, ${1:data}, `\\n\\n\\n\\n\\t\\tLogging ends\\n`)"
+      "console.log(",
+      "\t`\\n======================Logging start==================\\n",
+      "\t\t\tLabel: ${1:label}",
+      "\t`,",
+      "\tnew Error().stack,",
+      "\t`\\n\\n`,",
+      "\t${2:code},",
+      "\t`\\n\\n=====================Logging ends===================\\n`",
+      ");"
     ],
     "description": "Log to console with some debug info"
   },
+
+  "console.log JSON.stringify": {
+    "prefix": "consolelogjson",
+    "body": [
+      "console.log(",
+      "\t`\\n======================Logging start==================\\n",
+      "\t\t\tLabel: ${1:result}",
+      "\t`,",
+      "\tJSON.stringify(${1:code}, null, 2),",
+      "\t`\\n\\n=====================Logging ends===================\\n`",
+      ");"
+    ],
+    "description": "console.log JSON.stringify"
+  },
+
   "const function": {
     "prefix": "constantfunc",
     "body": [
@@ -37,6 +67,7 @@
       "}"
     ]
   },
+
   "export const function": {
     "prefix": "exportconstantfunc",
     "body": [
@@ -46,6 +77,7 @@
       "}"
     ]
   },
+
   "export default const function": {
     "prefix": "exportdefaultconstantfunc",
     "body": [
@@ -58,10 +90,12 @@
       "export default ${1:funcName}"
     ]
   },
+
   "export constant": {
     "prefix": "exportconstant",
     "body": "export const ${1:name} = $0"
   },
+
   "export default constant": {
     "prefix": "exportdefaultconstant",
     "body": [
@@ -84,18 +118,6 @@
     "description": "immediately invoked function expression"
   },
 
-  "console.log JSON.stringify": {
-    "prefix": "consolelogjson",
-    "body": ["console.log(JSON.stringify(${1:val}, null, 2));"],
-    "description": "console.log JSON.stringify"
-  },
-
-  "Typescript {[key:string]:any}": {
-    "prefix": "keystringtype",
-    "body": ["{[key:string]:${1:any}} ${2}"],
-    "description": "Typescript {[key:string]:any}"
-  },
-
   "eslint-disable-next-line": {
     "prefix": "eslint-disable-next-line",
     "body": "/* eslint-disable-next-line ${1} */",
@@ -107,6 +129,7 @@
     "body": "/* eslint-disable ${1} */",
     "description": "eslint disable"
   },
+
   "helper funcs": {
     "prefix": "helperfuncs",
     "body": [
