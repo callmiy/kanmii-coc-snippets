@@ -14,6 +14,7 @@
 			"description": "Log output to console"
 		}
 	*/
+
   "Export react class component": {
     "prefix": "exportreactclass",
     "body": [
@@ -35,7 +36,7 @@
       "\t`\\n======================Logging start==================\\n",
       "\t\t\tLabel: ${1:label}",
       "\t`,",
-      "\t${2:code},",
+      "\t${1:code},",
       "\t`\\n\\n=====================Logging ends===================\\n`",
       ");"
     ],
@@ -51,7 +52,7 @@
       "\t`,",
       "\tnew Error().stack,",
       "\t`\\n\\n`,",
-      "\t${2:code},",
+      "\t${1:code},",
       "\t`\\n\\n=====================Logging ends===================\\n`",
       ");"
     ],
@@ -63,7 +64,7 @@
     "body": [
       "console.log(",
       "\t`\\n======================Logging start==================\\n",
-      "\t\t\tLabel: ${1:result}",
+      "\t\t\tLabel: ${1:label}",
       "\t`,",
       "\tJSON.stringify(${1:code}, null, 2),",
       "\t`\\n\\n=====================Logging ends===================\\n`",
